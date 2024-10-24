@@ -1,0 +1,8 @@
+t = float(input("Nhập thời gian sử dụng bóng đèn (giây): "))
+U = 220  # Hiệu điện thế (V)
+I = 2.7  # Cường độ dòng điện (A)
+gia_dien = 7000  # Giá tiền điện (đồng/kWh)
+P = U * I
+W = P * t / 3600 / 1000
+tien_dien = W * gia_dien
+print(f"Số tiền điện phải trả: {round(tien_dien, 2)} đồng")
